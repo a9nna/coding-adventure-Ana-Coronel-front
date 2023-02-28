@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
-const ButtonStyled = styled.button<{}>`
+const ButtonStyled = styled.button`
   width: 80%;
   height: 40px;
   font-size: 20px;
   padding: 5px;
   border-radius: 10px;
-  background-color: ${(props) => props.theme.primary};
+  background-color: ${(props) => props.theme.colors.primary};
   cursor: pointer;
 
   &:disabled {

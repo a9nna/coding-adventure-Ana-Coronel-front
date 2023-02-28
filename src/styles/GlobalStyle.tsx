@@ -11,7 +11,7 @@ a, a:focus, a:active, a:visited {
 
 body{
   margin: 0;
-  font-family: "Saira Stencil One";
+  font-family: ${(props) => props.theme.text.main};
 }
 
 ul {
