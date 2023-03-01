@@ -11,6 +11,7 @@ a, a:focus, a:active, a:visited {
 
 body{
   margin: 0;
+  background-color: ${(props) => props.theme.colors.secondary};
   font-family: ${(props) => props.theme.text.main};
 }
 
