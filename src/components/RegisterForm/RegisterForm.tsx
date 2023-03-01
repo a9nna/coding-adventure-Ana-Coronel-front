@@ -14,7 +14,7 @@ const RegisterForm = (): JSX.Element => {
           Password
           <input type="password" placeholder="Introduce your password" />
         </label>
-        <label>
+        <label aria-label="Image button">
           Image
           <input type="file" />
         </label>
