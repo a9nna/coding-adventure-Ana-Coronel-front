@@ -1,7 +1,7 @@
-import Button from "./components/Button/Button";
+import RegisterForm from "./components/RegisterForm/RegisterForm";
 
 const App = (): JSX.Element => {
-  return <Button text={"Sign In"}></Button>;
+  return <RegisterForm />;
 };
 
 export default App;

@@ -1,7 +1,10 @@
+import Button from "../Button/Button";
+import RegisterFormStyled from "./RegisterFormStyled";
+
 const RegisterForm = (): JSX.Element => {
   return (
-    <>
-      <span>Register for the event</span>
+    <RegisterFormStyled>
+      <h2>Register for the event</h2>
       <form>
         <label>
           Email
@@ -15,9 +18,9 @@ const RegisterForm = (): JSX.Element => {
           Image
           <input type="file" />
         </label>
-        <button>Sign up</button>
+        <Button text={"Sign up"} />
       </form>
-    </>
+    </RegisterFormStyled>
   );
 };
 
