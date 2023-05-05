@@ -21,4 +21,19 @@ describe("Given a Button component", () => {
       expect(button).toBeInTheDocument();
     });
   });
+  describe("When is rendered and receives isDisabled to true value", () => {
+    test("Then it should show a disabled button", () => {
+      const text = "Sign up";
+      const isButtonDisabled = true;
+
+      render(
+        <ThemeProvider theme={myTheme}>
+          <Button isDisabled={isButtonDisabled} text={text}></Button>
+        </ThemeProvider>
+      );
+      const disabledButton = screen.getByRole("button", { name: text });
+
+      expect(disabledButton).toBeDisabled();
+    });
+  });
 });
