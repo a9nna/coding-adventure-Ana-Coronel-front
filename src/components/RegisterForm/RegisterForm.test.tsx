@@ -70,4 +70,19 @@ describe("Given a RegisterForm component", () => {
       expect(button).toBeInTheDocument();
     });
   });
+  describe("When is wrote 'ana@ana.com' in the email input", () => {
+    test("Then it should show the value 'ana@ana.com'", () => {
+      // const text = "ana@ana.com";
+
+      render(
+        <ThemeProvider theme={myTheme}>
+          <RegisterForm />
+        </ThemeProvider>
+      );
+
+      // const emailInput = fireEvent.change(), {
+      //   target:
+      // })
+    });
+  });
 });

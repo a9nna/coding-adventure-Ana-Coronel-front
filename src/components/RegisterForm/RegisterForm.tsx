@@ -21,7 +21,7 @@ const RegisterForm = (): JSX.Element => {
     formData.append(event.target.name, event.target.files![0]);
   };
 
-  const isDisabled = userState.email === "" || userState.password === "";
+  const isButtonDisabled = userState.email === "" || userState.password === "";
 
   return (
     <RegisterFormStyled>
@@ -51,7 +51,7 @@ const RegisterForm = (): JSX.Element => {
           Image
           <input type="file" name="image" onChange={handleImageState} />
         </label>
-        <Button isDisabled={isDisabled} text={"Sign up"} />
+        <Button isDisabled={isButtonDisabled} text={"Sign up"} />
       </form>
     </RegisterFormStyled>
   );
